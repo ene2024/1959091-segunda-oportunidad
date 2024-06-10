@@ -1,0 +1,131 @@
+
+   .profile-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #145C81;
+    position: relative; 
+  }
+
+  .align-left {
+    position: absolute;
+    left: 10px; 
+    top: 20px; 
+  }
+  
+  .profile-header ion-avatar {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-header h2 {
+    margin: 10px 0;
+  }
+  
+  .profile-stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background: linear-gradient(to bottom, #145C81, rgb(32, 32, 32));
+  }
+  
+  .profile-stats div {
+    text-align: center;
+  }
+  
+  .profile-stats h3 {
+    margin: 0;
+  }
+  
+  .profile-stats p {
+    margin: 5px 0 0;
+    color: gray;
+    
+  }
+  
+  ion-button {
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .small-button {
+    --padding-top: 2px;
+    --padding-bottom: 2px;
+    --padding-start: 10px;
+    --padding-end: 10px;
+    font-size: 8px;
+  }
+  
+  .sm-button {
+    --padding-top: 8px;
+    --padding-bottom: 8px;
+    --padding-start: 40px;
+    --padding-end: 40px;
+    font-size: 12px;
+  }
+
+  .align-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .transparent-button {
+    background: #145C81;
+   
+  }
+
+  h3 {
+    padding: 10px;
+  }
+
+ 
+
+  .playlist-image {
+    width: 40px; 
+    height: 40px;
+    object-fit: cover; 
+    margin-right: 10px; 
+  }
+  
+  ion-item {
+    align-items: center; 
+  }
+
+  .playlist-button {
+    background-color: transparent; 
+    border: none;
+    color: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px; 
+  }
+  
+  .playlist-button ion-icon {
+    margin-right: 5px;
+  }
+
+  ion-tabs {
+    height: 100%;
+    width: 100%;
+  }
+
+  
+
+  img {
+    border-radius: 50%;
+  }
+  
+  

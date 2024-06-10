@@ -1,0 +1,133 @@
+<ion-content>
+  <div class="profile-header">
+    <div class="align-left">
+      <ion-button href="/tabs/tab3" class="small-button transparent-button" shape="round" color="medium"> 
+        <ion-icon slot="icon-only" name="arrow-back" color="dark"></ion-icon> 
+      </ion-button>
+    </div>
+    <ion-avatar>
+      <ion-col>
+        <img [src]="fotoUsuario" alt="Avatar">
+      </ion-col>
+    </ion-avatar>
+    <h4>{{ nombreUsuario }}</h4>
+    <ion-button shape="round" class="sm-button" color="light" (click)="tomarFoto()">Cambiar foto</ion-button>
+  </div>
+
+  <div class="profile-stats">
+    <div>
+      <h5>3</h5>
+      <p>PLAYLISTS</p>
+    </div>
+    <div>
+      <h5>58</h5>
+      <p>SEGUIDORES</p>
+    </div>
+    <div>
+      <h5>43</h5>
+      <p>SIGUIENDO</p>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-label>
+      <br>
+      <h3>  Playlist</h3>
+      <br>
+    </ion-label>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto">
+            <img src="../../assets/icon/image2.png" alt="playlist" class="playlist-image">
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <h4>Shazam</h4>
+              <p>0 canciones</p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto">
+            <img src="../../assets/icon/image3.png" alt="playlist" class="playlist-image">
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <h4>Roadtrip</h4>
+              <p>0 canciones</p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto">
+            <img src="../../assets/icon/image4.png" alt="playlist" class="playlist-image">
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <h4>Study</h4>
+              <p>0 canciones</p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+    <ion-item *ngFor="let playlist of playlists">
+      <ion-grid>
+        <ion-row>
+          <ion-col size="auto">
+            <img src="../../assets/icon/image2.png" alt="playlist" class="playlist-image">
+          </ion-col>
+          <ion-col>
+            <ion-label>
+              <h4>{{ playlist.nombre }}</h4>
+              <p>{{ playlist.canciones.length }} canciones</p>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="playlist-button" href="/tabs/tab5" color="none">
+    <span>Crear playlist</span>
+    <ion-icon name="add"></ion-icon>
+  </ion-button>
+  
+
+</ion-content>
+
+
+<ion-footer> 
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon aria-hidden="true" name="home-outline"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="search">
+       <ion-icon aria-hidden="true" name="search-outline"></ion-icon>
+        <ion-label>Buscar</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="library">
+        <ion-icon aria-hidden="true" name="library-outline"></ion-icon>
+        <ion-label>Biblioteca</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-footer>
+
+
+
+
+  
+
+
